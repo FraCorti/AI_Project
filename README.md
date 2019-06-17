@@ -12,9 +12,14 @@ Il progetto è stato realizzato in Python, sono state utilizzate la seguenti lib
 
 Il dataset utilizzato per il progetto è reperibile al seguente link [Spam Collection Dataset](https://www.kaggle.com/uciml/sms-spam-collection-dataset) 
 
-## Come eseguirlo 
-È necessario ***possedere un account Kaggle*** dal quale poter scaricare il dataset tramite l'utilizzo di una *KAGGLE_KEY* personale, vedi [API Credentials](https://github.com/Kaggle/kaggle-api#api-credentials) per maggiori info.   
-Una volta ottenuta la chiave di Kaggle è necessario salvarla nel campo *key* presente in terza riga.  
-Per eseguire il progetto si suggerisce di appoggiarsi alla  piattaforma [Google Colab](https://colab.research.google.com/) che presenta già la versione di TensorFlow 2.0.0 integrata.  
-Il notebook è eseguibile anche in [Jupyter](https://jupyter.org/), previo scaricamento del dataset e installazione di [TensorFlow 2.0.0](https://www.tensorflow.org/beta/). 
+### Come eseguirlo 
+Per ***eseguire*** il progetto si suggerisce di appoggiarsi alla  piattaforma [Google Colab](https://colab.research.google.com/) la quale presenta già la versione di TensorFlow 2.0.0 integrata.
 
+Per ***importare*** il progetto nella propria piattaforma Colab personale è necessario accedere al propria account Colab e cliccare sulla voce *Upload notebook* . 
+
+È necessario ***possedere un account Kaggle*** dal quale poter scaricare il dataset tramite l'utilizzo di una *KAGGLE_KEY* personale, vedi [API Credentials](https://github.com/Kaggle/kaggle-api#api-credentials) per maggiori info.   
+Una volta ottenuta la chiave di Kaggle è necessario effettuare le seguenti operazioni nella **prima cella** dei file che si vogliono eseguire: 
+1. Salvare la chiave ottenuta nel campo *key*;
+2. Scrivere nel campo *username* il proprio username personale di Kaggle. 
+   
+Se tutto è stato settato correttamente la cella scarica automaticamente il dataset da Kaggle.  

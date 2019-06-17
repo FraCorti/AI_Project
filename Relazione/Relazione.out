@@ -3,10 +3,11 @@
 \BOOKMARK [1][-]{section.2}{Panoramica}{}% 3
 \BOOKMARK [1][-]{section.3}{Metodologie utilizzate}{}% 4
 \BOOKMARK [2][-]{subsection.3.1}{Reti neurali}{section.3}% 5
-\BOOKMARK [2][-]{subsection.3.2}{Logistic Regression}{section.3}% 6
-\BOOKMARK [1][-]{section.4}{Realizzazione}{}% 7
-\BOOKMARK [1][-]{section.5}{Validazione}{}% 8
-\BOOKMARK [1][-]{section.6}{Comparazioni}{}% 9
-\BOOKMARK [1][-]{section.7}{Conclusioni}{}% 10
-\BOOKMARK [1][-]{section.7}{Appendice}{}% 11
-\BOOKMARK [1][-]{appendix.Alph1}{Tabelle riassuntive}{}% 12
+\BOOKMARK [3][-]{subsubsection.3.1.1}{Configurazione}{subsection.3.1}% 6
+\BOOKMARK [2][-]{subsection.3.2}{Logistic Regression}{section.3}% 7
+\BOOKMARK [1][-]{section.4}{Realizzazione}{}% 8
+\BOOKMARK [1][-]{section.5}{Validazione}{}% 9
+\BOOKMARK [1][-]{section.6}{Comparazioni}{}% 10
+\BOOKMARK [1][-]{section.7}{Conclusioni}{}% 11
+\BOOKMARK [1][-]{section.7}{Appendice}{}% 12
+\BOOKMARK [1][-]{appendix.Alph1}{Tabelle riassuntive}{}% 13
