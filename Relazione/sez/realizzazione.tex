@@ -1,5 +1,7 @@
 \section{Realizzazione}
-Suddivisione dataset
+È stato scelto di suddividere il dataset in 80 e 20 percento. Dove 80\% dei dati è stato destinato al training set e il rimanente 20\% è stato utilizzato per il test set. \\
+Il dataset che è stato utilizzato è quello fornito dalla piattaforma \href{https://www.kaggle.com/}{Kaggle}, è disponibile al seguente link \href{https://www.kaggle.com/uciml/sms-spam-collection-dataset}{\textit{Spam Collection Dataset}}.\\
+Abbiamo utilizzato il metodo \textit{train\_test\_split} presente nella libreria \href{https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html#sklearn-model-selection-train-test-split}{scikit-learn}. 
 
 \subsection{Reti neurali}
 Il primo approccio che abbiamo scelto di utilizzare è stato quello delle reti neurali.
@@ -10,6 +12,11 @@ Questo ci ha permesso di:
 	\item Utilizzare TensorFlow(\textit{tf}) come ecosistema;
 	\item Definire la rete tramite la libreria \textit{tf.keras};
 \end{enumerate} 
+\begin{figure}[H]
+	\includegraphics[keepaspectratio = true, scale=0.4,center]{img/nnExample.png}
+	\caption{Esempio di rete neurale \textit{sequential}}
+\end{figure}
+
 \subsubsection{Struttura}
 È stata scelto di utilizzare il tipo di rete \href{https://keras.io/getting-started/sequential-model-guide/}{\textit{Sequential}}.\\ 
 Abbiamo creato due reti, con tre layer di tipo \href{https://keras.io/layers/core/}{\textit{Dense}}.
@@ -19,15 +26,16 @@ Le funzione di attivazione scelte sono le seguenti:
 	\item \href{https://keras.io/activations/#sigmoid}{\textit{Sigmoid}} per l'output della rete.
 \end{enumerate}
 La prima rete presenta la seguente struttura:
-\begin{lstlisting}[language=Python]
+\begin{lstlisting}[backgroundcolor = \color{white}]
 model = Sequential()  
 model.add(Dense(512, activation = 'relu')
 model.add(Dense(256, activation = 'relu'))
 model.add(Dense(1, activation = 'sigmoid'))
 \end{lstlisting}
 
+
 La seconda rete presenta la seguente struttura:
-\begin{lstlisting}[language=Python]
+\begin{lstlisting}[backgroundcolor = \color{white}]
 model = Sequential()
 model.add(Dense(512, activation = 'relu')
 model.add(Dropout(0.2))
@@ -45,11 +53,6 @@ Tramite il metodo \textit{compile()} presente in Keras è possibile stabilire:
 	\item \textbf{Metrics}: lista di metriche che verranno valutate dal modello durante la fase di training e testing.
 	Nel nostro caso è stata scelta la metrica di \href{https://keras.io/metrics/#binary_accuracy}{\textit{binary accuracy}}.  
 \end{enumerate} 
-
-\begin{figure}[H]
-	\includegraphics[scale=0.5,center]{img/nnExample.png}
-	\caption{Esempio di rete neurale}
-\end{figure}
 
 Perchè relu, perchè adam, sistema dropout
 (TEST SENZA dropout)
