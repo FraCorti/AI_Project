@@ -3,6 +3,7 @@
 Il dataset che è stato utilizzato è quello fornito dalla piattaforma \href{https://www.kaggle.com/}{Kaggle}, è disponibile al seguente link \href{https://www.kaggle.com/uciml/sms-spam-collection-dataset}{\textit{Spam Collection Dataset}}.\\
 Abbiamo utilizzato il metodo \textit{train\_test\_split} presente nella libreria \href{https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html#sklearn-model-selection-train-test-split}{scikit-learn}. 
 
+
 \subsection{Reti neurali}
 Il primo approccio che abbiamo scelto di utilizzare è stato quello delle reti neurali.
 Per farlo ci siamo appoggiati alla libreria \href{https://www.tensorflow.org/}{\textit{TensorFlow}} la quale, dalla versione 2.0.0, integra \href{https://keras.io/}{\textit{Keras}}.\\
@@ -43,6 +44,23 @@ model.add(Dense(256, activation = 'relu'))
 model.add(Dropout(0.2))
 model.add(Dense(1, activation = 'sigmoid'))
 \end{lstlisting}
+
+\subsubsection{Preparazione del dataset}
+Per preparare il dataset abbiamo utilizzato il \href{https://keras.io/preprocessing/text/#Tokenizer}{Text Preprocessing} presente nelle API di Keras. Questo permette di vettorizzare il corpus del testo, convertendo ogni parola presente in una sequenza di interi.\\
+In particolare abbiamo scelto di assegnare al parametro \textit{num\_words} il valore di 1000. Questo stabilisce il numero massimo di parole da mantenere, in base alla loro frequenza.\\
+Vengono quindi mantenute solo le parole \textit{num\_words-1} più comuni.
+\begin{lstlisting}[backgroundcolor = \color{white}]
+tokenizer = Tokenizer(num_words = num_max)
+\end{lstlisting}
+Dopo aver definito il nostro Tokenizer abbiamo utilizzato i metodi: 
+\begin{enumerate}
+\item \textit{fit\_on\_texts} per aggiornare il vocabolario interno basato sulla frequenza delle parole e crearne l'indice;
+\item \textit{texts\_to\_matrix} per convertire il testo in un \href{https://docs.scipy.org/doc/numpy/reference/generated/numpy.array.html}{numpy array} di\\ 
+forma: \texttt{(len(texts), num\_words)}.
+\end{enumerate}
+Maggiori info sui metodi di Keras preprocessing sono presenti al seguente link \href{http://faroit.com/keras-docs/2.0.2/preprocessing/text/}{Tokenizer Preprocessing}.
+
+
 
 \subsubsection{Configurazione}
 Tramite il metodo \textit{compile()} presente in Keras è possibile stabilire:
