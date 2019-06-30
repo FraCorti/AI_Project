@@ -1,6 +1,43 @@
 \section{Risultati}
+Dopo aver visto come abbiamo deciso di implementare gli algoritmi e le metodologie presi in considerazione, passiamo ora a vedere i risultati ottenuti.
 \subsection{Reti neurali}
-\subsubsection{con Dropout}
+Per quanto riguarda le reti neurali, i risultati ottenuti sono i seguenti.
+\subsubsection{Reti neurali con Dropout}
+\renewcommand{\arraystretch}{1.4}
+\begin{table}[H]
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|c|c|c|}
+			\hline
+				\textbf{Epoch} & \textbf{loss}    & \textbf{acc} & \textbf{binary accuracy} & \textbf{val loss} & \textbf{val acc} & \textbf{val binary accuracy}\\ \hline
+				1 & 0.1800 & 0.9419 & 0.9419 & 0.0555 & 0.9854 & 0.9854 \\ \hline
+				2 & 0.0326 & 0.9905 & 0.9905 & 0.0796 & 0.9843 & 0.9843 \\ \hline
+				3 & 0.0088 & 0.9978 & 0.9978 & 0.0563 & 0.9865 & 0.9865 \\ \hline
+				4 & 0.0039 & 0.9992 & 0.9992 & 0.0729 & 0.9865 & 0.9865 \\ \hline
+				5 & 0.0024 & 0.9997 & 0.9997 & 0.0863 & 0.9854 & 0.9854 \\ \hline
+				6 & 0.0021 & 0.9997 & 0.9997 & 0.0887 & 0.9865 & 0.9865 \\ \hline
+				7 & 0.0018 & 0.9997 & 0.9997 & 0.0945 & 0.9865 & 0.9865 \\ \hline
+				8 & 0.0017 & 0.9997 & 0.9997 & 0.0993 & 0.9877 & 0.9877 \\ \hline
+				9 & 0.0016 & 0.9997 & 0.9997 & 0.1026 & 0.9877 & 0.9877 \\ \hline
+				10 & 0.0017 & 0.9997 & 0.9997 & 0.0965 & 0.9865 & 0.9865 \\ \hline
+		\end{tabular}
+		\caption{Risulati ottenuti dal training della rete neurale con dropout\label{}}
+	\end{center}
+\end{table}
+\renewcommand{\arraystretch}{1}
+\renewcommand{\arraystretch}{1.4}
+\begin{table}[H]
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|c|c|c|}
+			\hline
+			 \textbf{loss} & \textbf{acc} & \textbf{binary accuracy} \\ \hline
+			0.1885  & 0.9857 & 0.9857 \\ \hline
+		\end{tabular}
+		\caption{Risulati ottenuti dalla validazione della rete neurale con dropout\label{}}
+	\end{center}
+\end{table}
+\renewcommand{\arraystretch}{1}
+Dai risultati notiamo come già alla prima iterazione, la rete neurale con dropout riesce ad avere ottimi risultati fino ad arrivare alla decima iterazione del training in cui l'accuratezza e l'errore risultato infinitesimali.
+Questo aspetto si nota anche nel set di validazione nella quale il risultato è eccellente, questo denota una buona divisione del dataset nelle porzioni di training, validazione e verifica.
 \subsubsection{senza Dropout}
 \subsubsection{Cos'è il "Dropout"}
 \subsection{Logistic regression}
