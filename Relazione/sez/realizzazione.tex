@@ -14,8 +14,7 @@ Dopo aver definito il nostro Tokenizer abbiamo utilizzato i metodi:
 Maggiori info sui metodi di Keras preprocessing sono presenti al seguente link \href{http://faroit.com/keras-docs/2.0.2/preprocessing/text/}{Tokenizer Preprocessing}.
 
 \section{Realizzazione}
-È stato scelto di suddividere il dataset in 80 e 20 percento. Dove 80\% dei dati è stato destinato al training set e il rimanente 20\% è stato utilizzato per il test set. \\
-Il dataset che è stato utilizzato è quello fornito dalla piattaforma \href{https://www.kaggle.com/}{Kaggle}, è disponibile al seguente link \href{https://www.kaggle.com/uciml/sms-spam-collection-dataset}{\textit{Spam Collection Dataset}}.\\
+È stato scelto di suddividere il dataset in 80 e 20 percento. Dove 80\% dei dati è stato destinato al training set e il rimanente 20\% è stato utilizzato per il test set.Il dataset che è stato utilizzato è quello fornito dalla piattaforma \href{https://www.kaggle.com/}{Kaggle}, è disponibile al seguente link \href{https://www.kaggle.com/uciml/sms-spam-collection-dataset}{\textit{Spam Collection Dataset}}.\\
 Abbiamo utilizzato il metodo \textit{train\_test\_split} presente nella libreria \href{https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html#sklearn-model-selection-train-test-split}{scikit-learn}. 
 
 
@@ -70,9 +69,10 @@ Tramite il metodo \textit{compile()} presente in Keras è possibile stabilire:
 	\item \textbf{Metrics}: lista di metriche che verranno valutate dal modello durante la fase di training e testing.
 	Nel nostro caso è stata scelta la metrica di \href{https://keras.io/metrics/#binary_accuracy}{\textit{binary accuracy}}.  
 \end{enumerate} 
-
-Perchè relu, perchè adam, sistema dropout
-(TEST SENZA dropout)
+È stato scelto di utilizzare il \textit{Dropout}, una tecnica che può prevenire il fenomeno dell'overfitting che spesso si verifica allenando le reti neurali.\\
+Il termine dropout fa riferimento proprio al fatto di far cadere e quindi escludere, per un breve periodo, certi nodi dalla rete neurale. Le unità che vengono temporaneamente nascoste sono scelte in modo casuale.\\
+Per maggiori informazioni riguardanti la tecnica del dropout si 
+veda \href{http://www.jmlr.org/papers/volume15/srivastava14a/srivastava14a.pdf}{Dropout: A Simple Way to Prevent Neural Networks fromOverfitting}
 \subsection{Logistic Regression}
 
 
