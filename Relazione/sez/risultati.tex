@@ -75,6 +75,11 @@ Questo aspetto è osservabile anche nel set di validazione nel quale il risultat
 Dai risultati notiamo come il miglioramento sia costante, la rete neurale senza dropout riesce ad avere discreti risultati fino ad arrivare alla decima iterazione del training dove l'accuratezza e l'errore risultato buoni anche se non ottimi.
 Questo aspetto si nota anche nel set di validazione nella quale il risultato è buona, si sottolinea quindi la presenza di una sproporzione nel dataset che deve essere colmata con metodi aggiuntivi.
 \subsubsection{Cos'è il "Dropout"}
+Il \textit{Dropout}, una tecnica che può prevenire il fenomeno dell' \href{https://en.wikipedia.org/wiki/Overfitting}{overfitting} che spesso si verifica allenando le reti neurali.\\
+Il termine dropout fa riferimento proprio al fatto di ``far cadere'' e quindi escludere, per un breve periodo, una porzione nodi dalla rete neurale nelle fase di training. Questo permette alle unità di non co-adattarsi troppo.\\
+Le unità che vengono temporaneamente nascoste sono scelte in modo casuale.\\
+Per maggiori informazioni riguardanti la tecnica del dropout si 
+veda \href{http://www.jmlr.org/papers/volume15/srivastava14a/srivastava14a.pdf}{Dropout: A Simple Way to Prevent Neural Networks fromOverfitting}
 \subsection{Logistic regression}
 \renewcommand{\arraystretch}{1.4}
 \begin{table}[H]
