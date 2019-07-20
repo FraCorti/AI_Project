@@ -70,5 +70,12 @@ Tramite il metodo \textit{compile()} presente in Keras è possibile stabilire:
 	Nel nostro caso è stata scelta la metrica di \href{https://keras.io/metrics/#binary_accuracy}{\textit{binary accuracy}}.  
 \end{enumerate} 
 \subsection{Logistic Regression}
+Il secondo approccio che abbiamo scelto di utilizzare è stato quello della logistic regression.
+Per farlo ci siamo appoggiati alla libreria \href{https://scikit-learn.org/stable/}{\textit{Sklearn}}.\\ 
 
-
+\subsubsection{Configurazione}
+Tramite il metodo \textit{fit()} presente in Sklearn è possibile stabilire:
+\begin{enumerate}
+	\item \textbf{precision}: \href{https://scikit-learn.org/stable/modules/generated/sklearn.metrics.precision_score.html#sklearn.metrics.precision_score} nel nostro caso, maggiori informazioni al seguente link \href{https://keras.io/losses/}{\textit{precision}};	\item \textbf{recall}: \href{https://scikit-learn.org/stable/modules/generated/sklearn.metrics.recall_score.html#sklearn.metrics.recall_score} nel nostro caso, maggiori informazioni al seguente link \href{https://keras.io/losses/}{\textit{recall}};
+	\item \textbf{f1}: nel nostro caso, maggiori informazioni al seguente link \href{https://scikit-learn.org/stable/modules/generated/sklearn.metrics.f1_score.html}{\textit{f1}}.  
+\end{enumerate} 
