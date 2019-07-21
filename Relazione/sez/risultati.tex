@@ -74,7 +74,7 @@ Questo aspetto è osservabile anche nel set di validazione nel quale il risultat
 \renewcommand{\arraystretch}{1}
 Dai risultati notiamo come il miglioramento sia costante, la rete neurale senza dropout riesce ad avere discreti risultati fino ad arrivare alla decima iterazione del training dove l'accuratezza e l'errore risultato buoni anche se non ottimi.
 Questo aspetto si nota anche nel set di validazione nella quale il risultato è buona, si sottolinea quindi la presenza di una sproporzione nel dataset che deve essere colmata con metodi aggiuntivi.
-\subsubsection{Cos'è il "Dropout"}
+\subsubsection{Cos'è il Dropout?}
 Il \textit{Dropout}, è una tecnica che può prevenire il fenomeno dell' \href{https://en.wikipedia.org/wiki/Overfitting}{overfitting} che spesso si verifica allenando le reti neurali.\\
 Il termine dropout fa riferimento proprio al fatto di ``far cadere'' e quindi escludere, per un breve periodo, una porzione nodi dalla rete neurale nelle fase di training. Questo permette alle unità di non co-adattarsi troppo.\\
 Le unità che vengono temporaneamente nascoste sono scelte in modo casuale.\\
@@ -94,6 +94,6 @@ veda \href{http://www.jmlr.org/papers/volume15/srivastava14a/srivastava14a.pdf}{
 	\end{center}
 \end{table}
 \renewcommand{\arraystretch}{1}
-Dai risultati notiamo come l'accuratezza e la precisione arrivino ad un ottimo livello sia per i messaggi di tipo "Spam" che di tipo "Ham", cosa che non si verifica nella metrica di recall per lo "Spam". Questo è dovuto al dataset non bilanciato nella quantità di record delle due categorie. \\
-Si può affermare comunque che il risultato ottenuto dalla logistic regressiom, sia più che positivo.\\
+Dai risultati notiamo come l'accuratezza e la precisione arrivino ad un ottimo livello sia per i messaggi di tipo ``Spam" che di tipo ``Ham", cosa che non si verifica nella metrica di recall per lo ``Spam". Questo è dovuto al dataset non bilanciato nella quantità di record delle due categorie. \\
+Si può affermare comunque che il risultato ottenuto dalla logistic regression, sia più che positivo.\\
 Ci teniamo a sottolineare che, volutamente, non sono state prese precauzioni riguardo al dataset e ai suoi problemi di sbilanciamento.

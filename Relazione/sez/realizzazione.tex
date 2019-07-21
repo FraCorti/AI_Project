@@ -11,21 +11,21 @@ Dopo aver definito il nostro Tokenizer abbiamo utilizzato i metodi:
 	\item \textit{texts\_to\_matrix} per convertire il testo in un \href{https://docs.scipy.org/doc/numpy/reference/generated/numpy.array.html}{numpy array} di\\ 
 	forma: \texttt{(len(texts), num\_words)}.
 \end{enumerate}
-Maggiori info sui metodi di Keras preprocessing sono presenti al seguente link \href{http://faroit.com/keras-docs/2.0.2/preprocessing/text/}{Tokenizer Preprocessing}.
+Maggiori info sui metodi di Keras preprocessing sono presenti al seguente link: \href{http://faroit.com/keras-docs/2.0.2/preprocessing/text/}{Tokenizer Preprocessing}.
 
 \section{Realizzazione}
-È stato scelto di suddividere il dataset in 80 e 20 percento. Dove 80\% dei dati è stato destinato al training set e il rimanente 20\% è stato utilizzato per il test set.Il dataset che è stato utilizzato è quello fornito dalla piattaforma \href{https://www.kaggle.com/}{Kaggle}, è disponibile al seguente link \href{https://www.kaggle.com/uciml/sms-spam-collection-dataset}{\textit{Spam Collection Dataset}}.\\
-Abbiamo utilizzato il metodo \textit{train\_test\_split} presente nella libreria \href{https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html#sklearn-model-selection-train-test-split}{scikit-learn}. 
+È stato scelto di suddividere il dataset in 80\% e 20\%. Dove 80\% dei dati è stato destinato al training set e il rimanente 20\% è stato utilizzato per il test set. Il dataset che è stato utilizzato è quello fornito dalla piattaforma \href{https://www.kaggle.com/}{Kaggle}, è disponibile al seguente link: \href{https://www.kaggle.com/uciml/sms-spam-collection-dataset}{\textit{Spam Collection Dataset}}.\\
+Abbiamo utilizzato il metodo \textit{train\_test\_split} presente nella libreria \href{https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html#sklearn-model-selection-train-test-split}{scikit-learn} per suddividere i dati in training set e test set in modo causale.
 
 
 \subsection{Reti neurali}
 Il primo approccio che abbiamo scelto di utilizzare è stato quello delle reti neurali.
-Per farlo ci siamo appoggiati alla libreria \href{https://www.tensorflow.org/}{\textit{TensorFlow}} la quale, dalla versione 2.0.0, integra \href{https://keras.io/}{\textit{Keras}}.\\
+Per farlo ci siamo appoggiati alla libreria \href{https://www.tensorflow.org/}{\textit{TensorFlow}} la quale, dalla versione 2.0.0, contiene \href{https://keras.io/}{\textit{Keras}} al suo interno.\\
 Maggiori informazioni riguardanti l'integrazione di Keras sono presenti al seguente link \href{https://www.tensorflow.org/guide/keras}{\textit{tf.keras}}.\\ 
 Questo ci ha permesso di:
 \begin{enumerate}
 	\item Utilizzare TensorFlow(\textit{tf}) come ecosistema;
-	\item Definire la rete tramite la libreria \textit{tf.keras};
+	\item Definire la rete tramite il modulo \textit{tf.keras} presente in \textit{TensorFlow};
 \end{enumerate} 
 \begin{figure}[H]
 	\includegraphics[keepaspectratio = true, scale=0.4,center]{img/nnExample.png}
@@ -76,6 +76,6 @@ Per farlo ci siamo appoggiati alla libreria \href{https://scikit-learn.org/stabl
 \subsubsection{Configurazione}
 Tramite il metodo \textit{fit()} presente in Sklearn è possibile stabilire:
 \begin{enumerate}
-	\item \textbf{precision}: \href{https://scikit-learn.org/stable/modules/generated/sklearn.metrics.precision_score.html#sklearn.metrics.precision_score} nel nostro caso, maggiori informazioni al seguente link \href{https://keras.io/losses/}{\textit{precision}};	\item \textbf{recall}: \href{https://scikit-learn.org/stable/modules/generated/sklearn.metrics.recall_score.html#sklearn.metrics.recall_score} nel nostro caso, maggiori informazioni al seguente link \href{https://keras.io/losses/}{\textit{recall}};
+	\item \textbf{precision}: \href{https://scikit-learn.org/stable/modules/generated/sklearn.metrics.precision_score.html#sklearn.metrics.precision_score} nel nostro caso, maggiori informazioni al seguente link \href{https://keras.io/losses/}{\textit{precision}};	\item \textbf{recall}: \href{https://scikit-learn.org/stable/modules/generated/sklearn.metrics.recall\_score.html#sklearn.metrics.recall\_score} nel nostro caso, maggiori informazioni al seguente link \href{https://keras.io/losses/}{\textit{recall}};
 	\item \textbf{f1}: nel nostro caso, maggiori informazioni al seguente link \href{https://scikit-learn.org/stable/modules/generated/sklearn.metrics.f1_score.html}{\textit{f1}}.  
 \end{enumerate} 
