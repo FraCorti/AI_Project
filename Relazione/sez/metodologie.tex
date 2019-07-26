@@ -8,8 +8,8 @@ Alcune correnti di pensiero continuano a sostenere che la metodologia migliore d
 \newline
 Detto ciò, si può capire perché tra i tanti tipi di approcci al problema abbiamo deciso di utilizzare la \textit{Logistic Regression} e le \textit{Neural Networks}, vediamoli ora in modo più approfondito.
 \subsection{Neural networks}
-Le \href{https://en.wikipedia.org/wiki/Neural_network}{Neural networks}, o reti neurali, sono ispirate alle reti di neuroni biologici. Solitamente, sono sistemi che imparano dagli esempi e che inizialmente sono configurati in modo randomizzato.\\
-Il concetto alla base è il singolo neurone artificiale, che poi viene rappresentato in collezioni connesse con altri neuroni, come nelle reti biologiche.
+Le \href{https://en.wikipedia.org/wiki/Neural_network}{\textit{Neural networks}}, o reti neurali, sono ispirate alle reti di neuroni biologici. Sono sistemi che imparano dagli esempi e che inizialmente sono configurati in modo randomizzato.\\
+Il concetto alla base è il neurone artificiale, che poi viene rappresentato in collezioni connesse con altri neuroni, come nelle reti biologiche.
 
 \begin{figure}[H]
 \centering
@@ -17,15 +17,15 @@ Il concetto alla base è il singolo neurone artificiale, che poi viene rappresen
 \caption{Esempio di neurone artificiale}
 \end{figure}
 
-Queste collezioni vengono comunemente chiamati layer e le connessioni tra ogni nodo vengono chiamati edge.\\
-Ad ogni neurone e ad ogni edge viene assegnato un peso, il quale, in concreto, ha la funzione di "aggiustamento" del tasso di apprendimento influenzando la il valore dei nodi o delle connessioni.
+Queste collezioni vengono comunemente chiamate \textit{layer} e le connessioni tra ogni nodo vengono chiamate \textit{edge}.\\
+Ad ogni neurone e ad ogni \textit{edge} viene assegnato un peso, il quale, ha la funzione di "aggiustamento" del tasso di apprendimento influenzando la il valore dei nodi o delle connessioni.
 
 \subsection{Logistic Regression}
-La \href{https://en.wikipedia.org/wiki/Logistic_regression}{Logistic Regression}  è un modello statistico che si basa sull'utilizzo della Logistic Function per modellare una variabile binaria dipendente.
+La \href{https://en.wikipedia.org/wiki/Logistic_regression}{\textit{Logistic Regression}}  è un modello statistico che si basa sull'utilizzo della Logistic Function per modellare una variabile binaria dipendente.
 \begin{equation}
 \sigma (t)={\frac {e^{t}}{e^{t}+1}}={\frac {1}{1+e^{-t}}}
 \end{equation}
-Il fulcro della Logistic Regression sta nell'assegnare un valore che va da 0 a 1 della probabilità che un dato elemento sia o meno del tipo A, la somma delle probabilità di appartenere o no alla categoria A deve essere 1. Sottolineiamo quindi che, come dal nome, è una forma di regressione matematica.\\ Interessante la possibilità di avere un grado maggiore o minore di tolleranza, e quindi una sorta di scelta, spostando in alto o in basso la soglia minima per essere considerati di un certo tipo. Questo ci consente maggiore flessibilità in caso di incertezza del nostro algoritmo o maggiore rigidezza in caso di estrema precisione.
+Il fulcro della \textit{Logistic Regression} sta nell'assegnare un valore che va da 0 a 1 della probabilità che un dato elemento sia o meno del tipo A, la somma delle probabilità di appartenere o no alla categoria A deve essere 1. Sottolineiamo quindi che, come dal nome, è una forma di regressione matematica.\\ Interessante la possibilità di avere un grado maggiore o minore di tolleranza, e quindi una sorta di scelta, spostando in alto o in basso la soglia minima per essere considerati di un certo tipo. Questo ci consente maggiore flessibilità in caso di incertezza del nostro algoritmo o maggiore rigidezza in caso di estrema precisione.
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.25]{img/logisticFunction.png}

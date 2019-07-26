@@ -1,14 +1,14 @@
 \newpage
 \section{Introduzione}
 \subsection{Scopo dell'analisi}
-Questo progetto consiste nell'applicazione e confronto di due metodi apprendimento supervisionato, per sottolinearne le potenzialità e i problemi.
+Questo progetto consiste nell'applicazione e confronto di due metodi di  apprendimento supervisionato, per sottolinearne le potenzialità e i problemi.
 
 \subsection{Il problema dello spam}
 Il problema dello spam affligge da molti anni tutte le persone che dispongano di una casella di posta elettronica oppure di uno smartphone.\\
-In passato è stato constato come l'eliminazione manuale dei messaggi spam, data la quantità di messaggi inviati, presentasse costi di tempo insostenibili.\\
+In passato è stato constato come l'eliminazione manuale dei messaggi spam presentasse costi di tempo insostenibili.\\
 Questo ha portato ad uno sviluppo di tecniche algoritmiche che permettessero di classificare automaticamente un messaggio ricevuto, come spam o \href{https://en.wiktionary.org/wiki/ham_e-mail}{ham}.\\
-Si è però scoperto che un approccio di tipo \href{https://en.wikipedia.org/wiki/Offline_learning}{\textit{offline learning}}, presentava dei problemi.\\
-Gli spammer, persone o bot che spediscono messaggi spam, riuscivano a modificare i messaggi in modo da renderli classificati come ham dai sistemi anti-spam presenti.\\
+Si è però scoperto che un approccio di tipo \href{https://en.wikipedia.org/wiki/Offline_learning}{\textit{offline learning}}, non era efficiente.\\
+Gli spammer riuscivano a modificare i messaggi in modo da renderli classificati come ham dai sistemi anti-spam presenti.\\
 Questo era possibile in quanto gli algoritmi non evolvevano nel tempo, cambiando la struttura del messaggio di spam questo veniva erroneamente identificato come un messaggio non spam.\\
 Si è quindi passati a un approccio di tipo \href{https://en.wikipedia.org/wiki/Online_algorithm}{online} che si è visto essere quello più ottimale.\\
 Gli algoritmi in questo modo non smettono di imparare una volta terminato l'input dei dati ma evolvono nel corso del tempo imparando a classificare nuove tipologie di messaggi come spam.\\
