@@ -42,21 +42,29 @@ Le funzione di attivazione scelte sono le seguenti:
 \end{enumerate}
 La prima rete presenta la seguente struttura:
 \begin{lstlisting}[backgroundcolor = \color{white}]
-model = Sequential()  
-model.add(Dense(512, activation = 'relu')
-model.add(Dense(256, activation = 'relu'))
-model.add(Dense(1, activation = 'sigmoid'))
+		model = Sequential([
+        Dense(512, input_dim = num_max), 
+        Activation('relu'),
+        Dense(256), 
+        Activation('relu'),
+        Dense(1),
+        Activation('sigmoid')
+    ])
 \end{lstlisting}
 
 
 La seconda rete presenta la seguente struttura:
 \begin{lstlisting}[backgroundcolor = \color{white}]
-model = Sequential()
-model.add(Dense(512, activation = 'relu')
-model.add(Dropout(0.2))
-model.add(Dense(256, activation = 'relu'))
-model.add(Dropout(0.2))
-model.add(Dense(1, activation = 'sigmoid'))
+		model = Sequential([
+        Dense(512, input_dim = num_max),
+        Activation('relu'),
+        Dropout(0.2),
+        Dense(256),
+        Activation('relu'),
+        Dropout(0.2),
+        Dense(1),
+        Activation('sigmoid')
+    ])
 \end{lstlisting}
 
 
