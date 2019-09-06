@@ -1,5 +1,5 @@
 ## (EN) Project for Artificial Intelligence course 
-Project for the teaching of [Artificial Intelligence](https://didattica.unipd.it/off/2018/LM/SC/SC1176/000ZZ/SCP6076337/N0), computer science degree course (Padua, Italy)
+Project for the teaching of [Artificial Intelligence](https://en.didattica.unipd.it/off/2018/LM/SC/SC1176/000ZZ/SCP6076337/N0), computer science degree course (Padua, Italy)
 
 The project involved the implementation of a spam filter. This was done using Python using the following libraries:
 1. [Keras](https://keras.io/) definition of the neural network and its training;
