@@ -8,6 +8,8 @@ The project involved the implementation of a spam filter. This was done using Py
 
 The dataset used for the project can be found at the following link: [Spam Collection Dataset](https://www.kaggle.com/uciml/sms-spam-collection-dataset).
 
+The purpose of the project and the tool we have used are explained inside the [report](https://github.com/FraCorti/AI_Project/blob/master/Relazione/Relazione.pdf). 
+
 ### How to run it
 To ***run*** the project it is suggested to lean on the platform [Google Colab](https://colab.research.google.com/) which already has the integrated version of TensorFlow 2.0.0.
 
@@ -31,7 +33,9 @@ Il progetto prevedeva l'implementazione di uno spam filter. Questo è stato real
 3. [scikit-learn](https://scikit-learn.org/stable/): pre-processing dei dati e utilizzo dell'algoritmo di [*LogisticRegression*](https://en.wikipedia.org/wiki/Logistic_regression);
 4. [Kaggle API](https://github.com/Kaggle/kaggle-api): scaricamento del dataset in formato *.zip*.
 
-Il dataset utilizzato per il progetto è reperibile al seguente link: [Spam Collection Dataset](https://www.kaggle.com/uciml/sms-spam-collection-dataset) 
+Il dataset utilizzato per il progetto è reperibile al seguente link: [Spam Collection Dataset](https://www.kaggle.com/uciml/sms-spam-collection-dataset).
+
+Lo scopo del progetto e gli strumenti che abbiamo utilizzato sono spiegati all'interno della [relazione](https://github.com/FraCorti/AI_Project/blob/master/Relazione/Relazione.pdf). 
 
 ### Come eseguirlo 
 Per ***eseguire*** il progetto si suggerisce di appoggiarsi alla  piattaforma [Google Colab](https://colab.research.google.com/) la quale presenta già la versione di TensorFlow 2.0.0 integrata.
